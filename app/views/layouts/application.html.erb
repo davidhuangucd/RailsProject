@@ -11,19 +11,15 @@
   <body>
 
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark style="height: 100px;">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
       <a class="navbar-brand" href="#">Ruby on rails</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item"><%= link_to "Home", root_path, class: "nav-link" %></li>
             <li class="nav-item"><%= link_to "About", about_path, class: "nav-link" %></li>
             <li class="nav-item"><%= link_to "Contact", contact_path, class: "nav-link" %></li>
         </ul>
-        <ul class="navbar-nav">
+        <ul class="navbar-nav ml-auto">
           <% if user_signed_in? %>
             <li class="nav-item mr-auto"><%= link_to "Log out", signout_path, method: :delete, class: "nav-link" %></li> 
           <% else %>                
@@ -36,7 +32,7 @@
 
     <!-- Flash Messages -->
     <% flash.each do |name, message| %>
-      <%= content_tag(:div, message, class: "alert alter-into #{name}") %>
+        <%= content_tag(:div, message, class: "alert alert-info #{name}") %>
     <% end %>
 
     <!-- Page Content -->
