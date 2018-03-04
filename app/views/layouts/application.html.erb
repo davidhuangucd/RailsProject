@@ -25,10 +25,10 @@
         </ul>
         <ul class="navbar-nav">
           <% if user_signed_in? %>
-            <li class="nav-item mr-auto"><%= link_to "Log out", destroy_user_session_path, method: :delete, class: "nav-link" %></li> 
-          <% else %>        
-             <li class="nav-item mr-auto"><%= link_to "Sign in", new_user_session_path, class: "nav-link" %></li>
-             <li class="nav-item mr-auto"><%= link_to "Sign up", new_user_registration_path, class: "nav-link btn btn-primary" %></li>
+            <li class="nav-item mr-auto"><%= link_to "Log out", signout_path, method: :delete, class: "nav-link" %></li> 
+          <% else %>                
+             <li class="nav-item mr-auto"><%= link_to "Log in", signin_path, class: "nav-link" %></li>
+             <li class="nav-item mr-auto"><%= link_to "Sign up", signup_path, class: "nav-link btn btn-primary" %></li>
           <% end %>
         </ul>
       </div>
