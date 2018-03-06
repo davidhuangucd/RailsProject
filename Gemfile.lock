@@ -261,7 +261,7 @@ PLATFORMS
 
 DEPENDENCIES
   activeadmin
-  bootstrap (~> 4.0.0.alpha6)
+  bootstrap (~> 4.0.0)
   byebug
   cancan
   capybara (~> 2.13)
