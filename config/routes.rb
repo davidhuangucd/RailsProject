@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'feed', to: 'feed#show'
+
   resources :users, only: :show, param: :username do
     member do
       post 'follow', to: 'follows#create'
