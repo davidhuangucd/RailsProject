@@ -8,6 +8,8 @@
             <p class="card-text"><%= link_to current_user.username, user_path(current_user.username) %></p>
           </div>
         </div>
+        <% else %>
+          <p class="card-text"><%= link_to "Sign up now", signup_path %></p>
       <% end %>
     </div>
     <div class="col-md-8">
