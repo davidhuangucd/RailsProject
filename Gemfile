@@ -34,6 +34,7 @@ gem 'cancan'
 gem 'draper'
 gem 'pundit'
 gem 'acts_as_follower', github: 'tcocca/acts_as_follower', branch: 'master'
+gem 'acts_as_votable', '~> 0.11.1'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
