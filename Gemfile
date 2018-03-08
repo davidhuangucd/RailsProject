@@ -35,6 +35,9 @@ gem 'draper'
 gem 'pundit'
 gem 'acts_as_follower', github: 'tcocca/acts_as_follower', branch: 'master'
 gem 'acts_as_votable', '~> 0.11.1'
+gem 'figaro'
+gem "paperclip", "~> 5.2.1"
+gem 'aws-sdk', '~> 2.3'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
@@ -51,9 +54,6 @@ group :development, :test do
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
   gem 'sqlite3'
-  gem 'figaro'
-  gem "paperclip", "~> 5.2.1"
-  gem 'aws-sdk', '~> 2'
 end
 
 group :production do
